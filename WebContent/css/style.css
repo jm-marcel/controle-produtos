@@ -1,0 +1,97 @@
+@CHARSET "ISO-8859-1";
+
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+* {
+	margin: 0;
+}
+
+div.header h1 {
+	background: #6C7B8B;
+	padding: 2%;
+	font: 40px Lobster;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	font: 18px "Open Sans Condensed";
+    display: inline-table;
+}
+
+table tr td {
+	text-align:center;
+	padding: 10px;
+}
+
+.cabecalho-table {
+	background: #ccc;
+}
+
+#alterar-remover>span>a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+p>a{
+	text-decoration: none;
+	border: 1px solid #EEE9E9;
+    border-radius: 20px;
+    padding: 4px 30px;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {box-shadow: 10px 20px 30px grey;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {box-shadow: 10px 20px 30px grey;}
+}
+
+#adicionar{
+	text-decoration: none;
+	font: 20px "Open Sans Condensed";
+	text-align: center;
+	position:absolute;
+	bottom: 12%;
+    margin: 0 45%;
+}
+
+div.rodape{
+	background: #6C7B8B;
+	padding: 2%;
+	font: 14px tahoma;
+	text-align: center;
+	position:absolute;
+	bottom:0;
+	width:96%;
+}
+
+div.form{
+	position: absolute;
+	margin: 10% 40%;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 2%;
+	font: 16px tahoma;
+}
+
+form>input[type=text],[type=password]{
+	margin: 10% 0 15%;
+	padding: 3%;
+}
+
+form>input[type=submit]{
+	width: 40%;
+	padding: 5px;
+	border-radius: 20px;
+	margin: 0 25%;
+	outline: none;
+}
